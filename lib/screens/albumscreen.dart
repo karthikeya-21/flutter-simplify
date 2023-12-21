@@ -43,6 +43,8 @@ class _AlbumScreenState extends State<AlbumScreen> {
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
+              backgroundColor: Colors.blue,
+
               title: Text('Albums'),
             ),
             body: albums != []

@@ -43,6 +43,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         title: Text('Photos'),
       ),
       body: photos != []

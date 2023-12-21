@@ -34,19 +34,22 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('SimplifyVms'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: users != []
-            ? ListView.builder(
-                itemCount: users.length,
-                itemBuilder: (context, index) {
-                  return UserTile(user: users[index]);
-                })
-            : Text("No users Found"),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: Text('SimplifyVms'),
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: users != []
+              ? ListView.builder(
+                  itemCount: users.length,
+                  itemBuilder: (context, index) {
+                    return UserTile(user: users[index]);
+                  })
+              : Text("No users Found"),
+        ),
       ),
     );
   }

@@ -39,6 +39,8 @@ class _TodoScreenState extends State<TodoScreen> {
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
+
         title: Text("To-Do's"),
       ),
       body: ListView.builder(

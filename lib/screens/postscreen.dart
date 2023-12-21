@@ -41,6 +41,7 @@ class _PostScreenState extends State<PostScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.blue,
           title: Text('Posts'),
         ),
         body: posts != []
